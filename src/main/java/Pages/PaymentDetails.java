@@ -21,8 +21,10 @@ public class PaymentDetails {
 	@FindBy(linkText="Pay")
 	private WebElement payBtn;
 	
+	WebDriver driver;
 	public PaymentDetails(WebDriver driver)
 	{
+		this.driver = driver;
 		PageFactory.initElements(driver, this);
 	}
 	

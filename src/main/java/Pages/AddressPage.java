@@ -10,8 +10,10 @@ public class AddressPage {
 	@FindBy(linkText="Select")
 	private WebElement address;
 	
+	WebDriver driver;
 	public AddressPage(WebDriver driver)
 	{
+		this.driver = driver;
 		PageFactory.initElements(driver, this);
 	}
 	

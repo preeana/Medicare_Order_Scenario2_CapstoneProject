@@ -12,9 +12,10 @@ public class OrderConfirmationPage {
 	@FindBy(linkText="Continue Shopping")
 	private WebElement continueBtn;
 	
-	
+	WebDriver driver;
 	public OrderConfirmationPage(WebDriver driver)
 	{
+		this.driver = driver;
 		PageFactory.initElements(driver, this);
 	}
 

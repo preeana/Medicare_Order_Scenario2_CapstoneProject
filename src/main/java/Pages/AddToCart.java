@@ -13,8 +13,10 @@ public class AddToCart {
 	@FindBy(xpath="(//a[contains(@class,'btn')])[2]")
 	private WebElement addCart;
 	
+	WebDriver driver;
 	public AddToCart(WebDriver driver)
 	{
+		this.driver = driver;
 		PageFactory.initElements(driver, this);
 	}
 	

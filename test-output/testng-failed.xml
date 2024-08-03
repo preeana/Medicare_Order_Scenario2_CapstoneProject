@@ -5,8 +5,10 @@
     <classes>
       <class name="testscripts.TestingPage">
         <methods>
+          <include name="positiveScenarioUser"/>
           <include name="add_twoitems_to_cart"/>
-          <include name="closeBrowser"/>
+          <include name="tearDown"/>
+          <include name="setup"/>
           <include name="launchBrowser"/>
         </methods>
       </class> <!-- testscripts.TestingPage -->

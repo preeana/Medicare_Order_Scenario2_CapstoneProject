@@ -28,9 +28,10 @@ public class CheckoutPage {
 	private WebElement logout;
 	
 
-	
+	WebDriver driver;
 	public CheckoutPage(WebDriver driver)
 	{
+		this.driver = driver;
 		PageFactory.initElements(driver, this);
 	}
 	

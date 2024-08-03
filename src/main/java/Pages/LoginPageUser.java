@@ -5,7 +5,9 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
+
 public class LoginPageUser {
+	
 	@FindBy(linkText="Login")
 	private WebElement loginBtn;
 	
@@ -18,8 +20,10 @@ public class LoginPageUser {
 	@FindBy(xpath="//input[contains(@value,'Login')]")
 	private WebElement loginBtnUser;	
 	
+	WebDriver driver;
 	public LoginPageUser(WebDriver driver)
 	{
+		this.driver = driver;
 		PageFactory.initElements(driver, this);
 	}
 	
